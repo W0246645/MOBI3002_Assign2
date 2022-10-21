@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuizBuilder</string>
+    <string name="btn_start">Start Quiz</string>
+    <string name="txt_EnterName">Enter Name</string>
+    <string name="btn_quit">Quit Quiz</string>
+    <string name="btn_restart">Restart Quiz</string>
+    <string name="btn_submit">Submit Answer</string>
+    <string name="btn_next">Next Question</string>
+    <string name="btn_results">Results</string>
+</resources>
