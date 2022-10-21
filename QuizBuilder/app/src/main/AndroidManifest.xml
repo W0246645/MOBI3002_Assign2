@@ -13,6 +13,20 @@
         android:theme="@style/Theme.QuizBuilder"
         tools:targetApi="31">
         <activity
+            android:name=".QuizAnswer"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Results"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".QuizScreen"
             android:exported="false">
             <meta-data

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2D2D2D"
-    tools:context=".MainActivity">
+    tools:context=".Results">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,6 @@
             android:id="@+id/txt_result"
             android:layout_width="match_parent"
             android:layout_height="329dp"
-            android:background="@drawable/rounded_corners"
             android:focusable="false"
             android:text="High Scores"
             android:textAlignment="center"
