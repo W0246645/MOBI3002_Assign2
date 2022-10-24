@@ -7,4 +7,5 @@
     <string name="btn_submit">Submit Answer</string>
     <string name="btn_next">Next Question</string>
     <string name="btn_results">Results</string>
+    <string name="txt_highscoreTitle">High Scores</string>
 </resources>

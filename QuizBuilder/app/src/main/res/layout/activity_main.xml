@@ -16,12 +16,19 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/txt_result"
+            android:id="@+id/txt_highscoresTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_highscoreTitle"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txt_highscores"
             android:layout_width="match_parent"
             android:layout_height="329dp"
             android:background="@drawable/rounded_corners"
             android:focusable="false"
-            android:text="High Scores"
             android:textAlignment="center"
             android:textColor="#FFFFFF" />
 

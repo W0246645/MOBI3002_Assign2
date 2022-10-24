@@ -79,11 +79,9 @@
                 android:layout_margin="5dp"
                 android:layout_weight="50"
                 android:backgroundTint="#4D4D4D"
-                android:text="@string/btn_quit"
                 android:textColor="#FFFFFF"
                 app:strokeColor="#000000"
-                app:strokeWidth="1dp"
-                tools:text="term" />
+                app:strokeWidth="1dp" />
 
             <Button
                 android:id="@+id/btn_term2"
@@ -92,11 +90,9 @@
                 android:layout_margin="5dp"
                 android:layout_weight="50"
                 android:backgroundTint="#4D4D4D"
-                android:text="@string/btn_quit"
                 android:textColor="#FFFFFF"
                 app:strokeColor="#000000"
-                app:strokeWidth="1dp"
-                tools:text="term" />
+                app:strokeWidth="1dp" />
 
         </TableRow>
 
@@ -112,11 +108,9 @@
                 android:layout_margin="5dp"
                 android:layout_weight="50"
                 android:backgroundTint="#4D4D4D"
-                android:text="@string/btn_quit"
                 android:textColor="#FFFFFF"
                 app:strokeColor="#000000"
-                app:strokeWidth="1dp"
-                tools:text="term" />
+                app:strokeWidth="1dp" />
 
             <Button
                 android:id="@+id/btn_term4"
@@ -125,11 +119,9 @@
                 android:layout_margin="5dp"
                 android:layout_weight="50"
                 android:backgroundTint="#4D4D4D"
-                android:text="@string/btn_quit"
                 android:textColor="#FFFFFF"
                 app:strokeColor="#000000"
-                app:strokeWidth="1dp"
-                tools:text="term" />
+                app:strokeWidth="1dp" />
 
         </TableRow>
 
