@@ -72,7 +72,8 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:weightSum="100">
+            android:weightSum="100"
+            android:baselineAligned="false">
 
             <Button
                 android:id="@+id/btn_term1"
@@ -81,6 +82,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="50"
                 android:background="@drawable/rounded_corners"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 app:backgroundTint="@null" />
 
@@ -99,7 +101,8 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:weightSum="100">
+            android:weightSum="100"
+            android:baselineAligned="false">
 
             <Button
                 android:id="@+id/btn_term3"

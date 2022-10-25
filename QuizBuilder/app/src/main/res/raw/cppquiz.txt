@@ -1,0 +1,10 @@
+This is the automatic reclamation (deterministically or non-deterministically) of memory occupied by objects that are no longer referenced (being used).$$Garbage Collection
+What type of garbage collection does C++ employ?$$deterministically
+You would use this if an object is destroyed explicitly by applying the delete operator to a base-class pointer to the object, where the base-class destructor function (matching the pointer type) is called on the object, not the destructor most appropriate to the class being destroyed.$$Virtual destructor
+When an object is created, its state can be initialized by this type of method. In most object-oriented languages, this method would have the same name as the class and would be created automatically if the programmer did not create one.$$Initialization Section
+This is the “blueprint” for an object. It is the code that defines an object, and all objects are created (instanced) based on this. It is an abstraction of a real-world concept, and it provides the basis from which we create instances of specific objects.$$Class
+This is the concept that a new class can be based on an existing class. This is done by extending (adding to) these behaviors from the existing class through a process known as sub classing or generalization.$$Inheritance
+This is when we include objects as instance variables (members) of other classes.$$Composition
+The C++ Standard Library class template vector is used to create?$$Vector
+array<int,5>myArray={1,2,3,4,5}; is an example of the use of what?$$Initializer
+An array is a contiguous group of memory locations that all have the same type. To refer to a single storage location of an array we refer to its name and _________ (see below) in square brackets.$$Index/subscript

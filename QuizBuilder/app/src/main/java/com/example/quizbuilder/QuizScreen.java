@@ -52,6 +52,7 @@ public class QuizScreen extends AppCompatActivity {
         txt_termNum = findViewById(R.id.txt_termNum);
 
         btn_quit.setOnClickListener(onQuitClicked);
+        btn_restart.setOnClickListener(onRestartClicked);
         btn_submit.setOnClickListener(onSubmitClicked);
 
         termButtons = new Button[]{btn_term1, btn_term2, btn_term3, btn_term4};
@@ -165,6 +166,21 @@ public class QuizScreen extends AppCompatActivity {
             i.putExtra("highscores", intent.getSerializableExtra("highscores"));
             i.putExtra("numCorrect", numCorrect);
             i.putExtra("numTerms", map.size());
+            startActivity(i);
+        }
+    };
+
+    public View.OnClickListener onRestartClicked = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            defs = new ArrayList<>(map.keySet());
+
+            Intent i = new Intent(QuizScreen.this, QuizScreen.class);
+            i.putExtra("name", intent.getStringExtra("name"));
+            i.putExtra("defs", defs);
+            i.putExtra("terms", terms);
+            i.putExtra("map", map);
+            i.putExtra("highscores", intent.getSerializableExtra("highscores"));
             startActivity(i);
         }
     };
