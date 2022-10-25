@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuizBuilder</string>
+    <string name="app_name">Quizzer</string>
     <string name="btn_start">Start Quiz</string>
     <string name="txt_EnterName">Enter Name</string>
     <string name="btn_quit">Quit Quiz</string>

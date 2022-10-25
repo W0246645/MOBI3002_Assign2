@@ -29,10 +29,12 @@
                 app:strokeWidth="1dp" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/txt_termNum"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
+                android:gravity="center"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF" />
 
             <Button
@@ -78,10 +80,9 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:backgroundTint="#4D4D4D"
+                android:background="@drawable/rounded_corners"
                 android:textColor="#FFFFFF"
-                app:strokeColor="#000000"
-                app:strokeWidth="1dp" />
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/btn_term2"
@@ -89,10 +90,9 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:backgroundTint="#4D4D4D"
+                android:background="@drawable/rounded_corners"
                 android:textColor="#FFFFFF"
-                app:strokeColor="#000000"
-                app:strokeWidth="1dp" />
+                app:backgroundTint="@null" />
 
         </TableRow>
 
@@ -107,10 +107,9 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:backgroundTint="#4D4D4D"
+                android:background="@drawable/rounded_corners"
                 android:textColor="#FFFFFF"
-                app:strokeColor="#000000"
-                app:strokeWidth="1dp" />
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/btn_term4"
@@ -118,10 +117,9 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="50"
-                android:backgroundTint="#4D4D4D"
+                android:background="@drawable/rounded_corners"
                 android:textColor="#FFFFFF"
-                app:strokeColor="#000000"
-                app:strokeWidth="1dp" />
+                app:backgroundTint="@null" />
 
         </TableRow>
 

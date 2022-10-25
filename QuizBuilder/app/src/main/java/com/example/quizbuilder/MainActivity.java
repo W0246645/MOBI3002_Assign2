@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -19,8 +20,9 @@ public class MainActivity extends AppCompatActivity {
     Button btn_start;
     TextView txt_highscores;
     EditText editText_name;
+    Intent intent;
 
-    String highscores;
+    ArrayList<ArrayList<String>> highscores;
     String name;
     ArrayList<String> defs = new ArrayList<>(Arrays.asList("d1", "d2", "d3", "d4", "d5"));
     ArrayList<String> terms = new ArrayList<>(Arrays.asList("t1", "t2", "t3", "t4", "t5"));
@@ -32,18 +34,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (getIntent() != null) {
-            highscores = getIntent().getStringExtra("highscores");
-            name = getIntent().getStringExtra("name");
+        intent = getIntent();
+
+        if (intent != null) {
+            highscores = (ArrayList<ArrayList<String>>) intent.getSerializableExtra("highscores");
+            name = intent.getStringExtra("name");
         }
 
-        btn_start = findViewById(R.id.btn_start);
-        txt_highscores = findViewById(R.id.txt_highscores);
+        btn_start = findViewById(R.id.btn_highscores);
+        txt_highscores = findViewById(R.id.txt_score);
         editText_name = findViewById(R.id.editText_name);
 
         btn_start.setOnClickListener(onSubmitClicked);
-
-        txt_highscores.setText(highscores);
+        String highscoresTxt = "";
+        if (highscores != null) {
+            for (int i = 0; i < highscores.size() && i != 10; i++) {
+                ArrayList<String> score = highscores.get(i);
+                highscoresTxt += (i + 1) + ". " + score.get(0) + " - " + score.get(1) + "/" + score.get(2) + "\n";
+            }
+        } else {
+            highscores = new ArrayList<>();
+        }
+        txt_highscores.setText(highscoresTxt);
         editText_name.setText(name);
 
         for (int i = 0; i < defs.size(); i++) {

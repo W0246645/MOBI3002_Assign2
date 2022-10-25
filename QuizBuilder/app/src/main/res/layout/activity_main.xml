@@ -24,13 +24,14 @@
             android:textColor="#FFFFFF" />
 
         <TextView
-            android:id="@+id/txt_highscores"
+            android:id="@+id/txt_score"
             android:layout_width="match_parent"
             android:layout_height="329dp"
             android:background="@drawable/rounded_corners"
             android:focusable="false"
             android:textAlignment="center"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editText_name"
@@ -44,7 +45,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/btn_start"
+            android:id="@+id/btn_highscores"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#4D4D4D"
